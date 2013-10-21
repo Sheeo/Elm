@@ -67,6 +67,14 @@ translation x y = matrix 1 0 0 1 x y
 scale : Float -> Transform2D
 scale a = matrix a 0 0 a 0 0
 
+{-| Creates a transformation for horizontal scaling -}
+scaleX : Float -> Transform2D
+scaleX x = matrix x 0 0 1 0 0
+
+{-| Creates a transformation for vertical scaling -}
+scaleY : Float -> Transform2D
+scaleY y = matrix y 0 0 1 0 0
+
 {-| Multiplies two transforms together:
 
       multiply a b
