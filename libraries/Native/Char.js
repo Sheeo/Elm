@@ -5,8 +5,8 @@ Elm.Native.Char.make = function(elm) {
     if (elm.Native.Char.values) return elm.Native.Char.values;
 
     function isBetween(lo,hi) { return function(chr) {
-	var c = chr.charCodeAt(0);
-	return lo <= c && c <= hi;
+      var c = chr.charCodeAt(0);
+      return lo <= c && c <= hi;
     };
                               }
     var isDigit = isBetween('0'.charCodeAt(0),'9'.charCodeAt(0));
